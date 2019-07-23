@@ -18,7 +18,7 @@
         - 💡IDE で Spring Boot を起動する場合は、環境変数変更後は再起動する必要がある
         
      1. `application.properties` などの `configファイル` に直接書き込んでも OK  
-        但し、`SECRET` と `TOKEN` の中身は **絶対に `git push` しないように最善の注意を払う** こと。
+        但し、`SECRET` と `TOKEN` の中身は **絶対に `git push` しないように最善の注意を払う** こと
 - ngrok
   1. [ngrok: Setup & Installation](https://dashboard.ngrok.com/get-started)
 
@@ -33,7 +33,7 @@
     ```
 1. Execute ngrok
    1. `ngrok http 8080` を入力  
-   （**Windows** の場合は インストールした exe を用いて上記と同じコマンドを入力する。）
+   （**Windows** の場合は インストールした exe を用いて上記と同じコマンドを入力する）
      
       ↓ こんなのが出力されれば OK!!
       ```sh
