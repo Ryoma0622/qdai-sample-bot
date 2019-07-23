@@ -82,7 +82,7 @@
 
 **Note: Both do the same**
 
-## Reference
+## References
 - [MVN REPOSITORY (GROUPE: com.linecorp.bot)](https://mvnrepository.com/artifact/com.linecorp.bot)
 - [LINE Bot × Java(Spring Boot)構築手順](https://qiita.com/zakisanbaiman/items/e87c4834b28c6d964e54)
 - [line-bot-sdk-javaでごみ出しリマインダーを作る](https://qiita.com/aytdm/items/7b8692662a0b161c555c)
