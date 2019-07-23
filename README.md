@@ -87,4 +87,4 @@
 - [LINE Bot × Java(Spring Boot)構築手順](https://qiita.com/zakisanbaiman/items/e87c4834b28c6d964e54)
 - [line-bot-sdk-javaでごみ出しリマインダーを作る](https://qiita.com/aytdm/items/7b8692662a0b161c555c)
 - [LINEボットとは？](http://humming-bird.info/linebot/linebot/)
-
+- [LINE Pay APIを使ってアプリに決済を組み込む方法](https://qiita.com/nkjm/items/b4f70b4daaf343a2bedc)
