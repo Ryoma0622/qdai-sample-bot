@@ -21,15 +21,33 @@
 
 ### RUN
 1. Git Clone
-    ```bash
+    ```sh
     git clone https://github.com/Ryoma0622/sample-bot.git
     ```
 1. Run
-    ```bash
+    ```sh
     ./gradlew bootRun
     ```
 1. Execute ngrok
-   1. `ngrok http 8080`
+   1. `ngrok http 8080`  
+     
+      Note: When you execute the command, it looks like this.
+      ```sh
+      ngrok by @inconshreveable                                                                                                                                                                                                     (Ctrl+C to quit)
+
+      Session Status                online
+      Account                       ***** (Plan: Free)
+      Version                       2.3.34
+      Region                        United States (us)
+      Web Interface                 http://127.0.0.1:4040
+      Forwarding                    http://abcdefgh.ngrok.io -> http://localhost:8080
+      Forwarding                    https://abcdefgh.ngrok.io -> http://localhost:8080
+
+      Connections                   ttl     opn     rt1     rt5     p50     p90
+                                    0       0       0.00    0.00    0.00    0.00
+
+
+      ```
    1. コンソールに表示された Forwarding の URL を確認する
       ```sh
       Forwarding https://abc.ngrok.io -> http://localhost:8080
