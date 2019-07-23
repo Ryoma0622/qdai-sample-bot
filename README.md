@@ -22,7 +22,7 @@
 ### RUN
 1. Git Clone
     ```bash
-    git clone https://github.com/Ryoma0622/qdai-sample-bot.git
+    git clone https://github.com/Ryoma0622/sample-bot.git
     ```
 1. Run
     ```bash
