@@ -13,9 +13,12 @@
         ```sh
         export LINE_BOT_CHANNEL_SECRET="123"
         export LINE_BOT_CHANNEL_TOKEN="123456"
-        export RESOURCE_HOST="https://abc.ngrok.io"
+        export RESOURCE_HOST="https://abcdefgh.ngrok.io"
         ```
         - 💡IDE で Spring Boot を起動する場合は、環境変数変更後は再起動する必要がある
+        
+     1. `application.properties` などの `configファイル` に直接書き込んでも OK  
+        但し、`SECRET` と `TOKEN` の中身は **絶対に `git push` しないように最善の注意を払う** こと。
 - ngrok
   1. [ngrok: Setup & Installation](https://dashboard.ngrok.com/get-started)
 
@@ -29,9 +32,10 @@
     ./gradlew bootRun
     ```
 1. Execute ngrok
-   1. `ngrok http 8080`  
+   1. `ngrok http 8080` を入力  
+   （**Windows** の場合は インストールした exe を用いて上記と同じコマンドを入力する。）
      
-      Note: When you execute the command, it looks like this.
+      ↓ こんなのが出力されれば OK!!
       ```sh
       ngrok by @inconshreveable                                                                                                                                                                                                     (Ctrl+C to quit)
 
@@ -50,12 +54,12 @@
       ```
    1. コンソールに表示された Forwarding の URL を確認する
       ```sh
-      Forwarding https://abc.ngrok.io -> http://localhost:8080
+      Forwarding https://abcdefgh.ngrok.io -> http://localhost:8080
       ```
 1. Setting Messaging API
-   1. チャネル基本設定 > Webhook URL > **abc.ngrok.io/callback** を設定
-   1. 「接続確認」を押し問題がないことを確認する
-      - 💡ngrok の URL は実行する度に変わるので都度変更する必要がある
+   1. チャネル基本設定 > Webhook URL > **abcdefgh.ngrok.io/callback** を設定
+   1. 「接続確認」を押し問題がないことを確認する（200 応答があれば OK）  
+      **※ ngrok の URL は実行する度に変わるので都度変更する必要がある**
 
 ## Sample to return an input message
 - Using Return
