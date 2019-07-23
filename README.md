@@ -62,7 +62,7 @@
       **※ ngrok の URL は実行する度に変わるので都度変更する必要がある**
 
 ## Sample to return an input message
-- Using Return
+- Simple pattern
     ```java
     @EventMapping
     public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
