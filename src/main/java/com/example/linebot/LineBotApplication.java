@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class LineBotApplication {
 
-    private final LineMessagingClient client;
+//    private final LineMessagingClient client;
 
     public static void main(String[] args) {
         SpringApplication.run(LineBotApplication.class, args);
@@ -29,9 +29,9 @@ public class LineBotApplication {
         return TextMessage.builder().text(event.getMessage().getText()).build();
     }
 
-    @EventMapping
-    public void handleTextMessageEventUsingClient(MessageEvent<TextMessageContent> event) {
-        client.replyMessage(new ReplyMessage(event.getReplyToken(), TextMessage.builder().text(event.getMessage().getText()).build()));
-    }
+//    @EventMapping
+//    public void handleTextMessageEventUsingClient(MessageEvent<TextMessageContent> event) {
+//        client.replyMessage(new ReplyMessage(event.getReplyToken(), TextMessage.builder().text(event.getMessage().getText()).build()));
+//    }
 
 }
