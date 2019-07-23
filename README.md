@@ -70,7 +70,7 @@
     }
     ```
     
-- Using LINE Client 
+- Using **LINE Client**
     ```java
     private final LineMessagingClient client;  
     
